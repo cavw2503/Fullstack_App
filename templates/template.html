@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Hello Toggle</title> <!-- A title for the web page -->
+
+    <style> /*A simple CSS style to hide the message initially*/
+        #message {
+            display: none;
+            font-size: 20px;
+            margin-top: 10px;
+        }
+    </style>
+    
+</head>
+
+<body> <!-- What shows up on the web page -->
+    <button onclick="toggleMessage()">Toggle Message</button>
+    <div id="message">Hello World</div>
+
+    <script> /* A simple JavaScript function to toggle the visibility of the message */
+        function toggleMessage() {
+            var msg = document.getElementById("message");
+            if (msg.style.display === "none") {
+                msg.style.display = "block";
+            } else {
+                msg.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
